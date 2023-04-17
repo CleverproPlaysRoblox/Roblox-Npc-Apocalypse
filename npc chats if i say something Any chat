@@ -1,0 +1,40 @@
+boring part
+
+
+this is in a folder in gerald
+
+
+local NPC = script.Parent.Parent
+local CC = Enum.ChatColor.White
+local waittime = 2
+
+more boring part do not touch!!!
+local function Chat(message: string, color)
+game:GetService("Chat"):Chat(NPC.Head, message, CC)
+end
+local function Jump()
+NPC.Humanoid.Jump = true
+end
+local function Move(pos: Vector3, spawn_thread)
+spawn_thread = spawn_thread or false
+gerald.Humanoid:MoveTo(pos)
+if not spawn_thread then gerald.Humanoid.MoveToFinished:Wait() end
+end
+local walkpoint = script.Parent.Parent.Walkpoints((Add walkpoints(add multiple parts in Walkpoints)))
+game:GetService('Players').PlayerAdded:Connect(function(player)
+
+
+
+game.Players:GetChildren()[1].Chatted:Wait()
+wait(waittime)
+Chat("Cleverpro is epic")
+
+game.Players:GetChildren()[1].Chatted:Wait()
+wait(waittime)
+Chat("Cleverpro is epic")
+Jump(3)
+
+game.Players:GetChildren()[1].Chatted:Wait()
+wait(waittime)
+Chat("Cleverpro is epic")
+Move(walkpoint["1"].Position)
