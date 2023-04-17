@@ -1,0 +1,26 @@
+```lua 
+
+IN TOOL
+
+local tool = script.Parent
+local handle = script.Parent.Handle
+
+if tool.Parent == workspace then
+local proxprompt = Instance.new("ProximityPrompt")
+proxprompt.Parent = handle
+proxprompt.KeyboardKeyCode = Enum.KeyCode.E
+proxprompt.ActionText = "Pick Up"
+proxprompt.HoldDuration = .5
+
+proxprompt.Triggered:Connect(function(Plr)
+local backpack = Plr:WaitForChild("Backpack")
+tool.Parent = backpack
+proxprompt:Destroy
+end
+
+
+In Handle
+
+if script.Parent:FindFirstChild("TouchInterest")
+ script.Parent:FindFirstChild("TouchInterest")
+ end
