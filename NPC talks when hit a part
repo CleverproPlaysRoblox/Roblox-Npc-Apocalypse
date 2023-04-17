@@ -1,18 +1,17 @@
-In the part you want the to touch
-add a screen gui
-in screnngui add frame
-in frame add text
-in the part you want to touch add a script
 
 
-```the script
-
-Popup = script.Parent.(...)
-Ready = true
+local Ready = true
+local CC = Enum.ChatColor.White
 local h = hit.Parent:FindFirstChild("Humanoid")
-if h ~= nil and Ready == true then
+if h ~= nil and Ready = true then
 Ready = false
 local plyr = game.Players:FindFirstChild(h.Parent.Name)
-local c = Popup:Clone()
-c.Parent = plyr.PLayerGui
-wait()
+local c = Chat:Clone()
+c.Parent = plyr.Players
+wait (5)
+c:remove()
+wait(1)
+Ready = true
+  end
+ end
+game:GetService("Chat"):Chat(script.Parent.Head, "It works!", CC)
