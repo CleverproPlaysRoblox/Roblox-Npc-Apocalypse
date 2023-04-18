@@ -18,6 +18,8 @@ if msg == "Yes" then
 game:GetService("Chat"):Chat(script.Parent.Head, "Me to❤️", CC)
          end
        end
+       if msg == "Your mom makes great cookies" or "Ur mom makes great cookies" then
+       game:GetService("Chat"):Chat(script.Parent.Head, "Ty", CC)
   end)
 end)
 
