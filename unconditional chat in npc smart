@@ -1,0 +1,23 @@
+local NPC = script.Parent.Parent
+local CC = Enum.ChatColor.White
+local waittime = 2
+local playerchat = "who"
+
+local function Chat(message: string, color)
+game:GetService("Chat"):Chat(NPC.Head, message, CC)
+end
+local function Move(pos: Vector3, spawn_thread)
+spawn_thread = spawn_thread or false
+NPC.Humanoid:MoveTo(pos)
+if not spawn_thread then NPC.Humanoid.MoveToFinished:Wait() end
+end
+local walkpoint = script.Parent.Parent.Walkpoints
+local PlayerService = game:GetService("PlayerS");
+PlayerService.PLayerAdded:Connect(function(Player)
+Player.Chatted:Connect(function(Message)
+if string.find(string.lower(Message), string.lower(playerchat)) then
+wait(waittime)
+
+Chat("Wdym loser")
+Jump(1)
+Move (walkpoint["1"].Position)
