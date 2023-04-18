@@ -3,13 +3,15 @@ game.Players.PlayerAdded:Connect(function(player)
 player.Chatted:Connect(function(msg)
 if msg == "Hello" or "Hi' or "hello" or "hi" then
 game:GetService("Chat"):Chat(script.Parent.Head, "Hi", CC)
+end
 if msg == "Kon'nichiwa" or "Konnichiwa" or "Su suru" or "Oi" or "Ya" then
 game:GetService("Chat"):Chat(script.Parent.Head, "Turn your language to Japanese dumbie", CC)
+   end
 if msg == "Nǐ hǎo" or "Ni hao" or "Hēi" or "Hei" or "Wǎnfàn" or "Wanfan" then
 game:GetService("Chat"):Chat(script.Parent.Head, "Turn your language to Chinese dumbie", CC)
 end
-       end
-    end
+    
+    
 if msg == "I love you" then
 game:GetService("Chat"):Chat(script.Parent.Head, "Really?", CC)
 if msg == "Yes" then
