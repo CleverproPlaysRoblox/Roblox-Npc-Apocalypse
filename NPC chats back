@@ -19,7 +19,11 @@ game:GetService("Chat"):Chat(script.Parent.Head, "Me to❤️", CC)
          end
        end
        if msg == "Your mom makes great cookies" or "Ur mom makes great cookies" then
+       game:GetService("Chat"):Chat(script.Parent.Head, "Really", CC)
+       if msg == "Yes" then
        game:GetService("Chat"):Chat(script.Parent.Head, "Ty", CC)
+       if msg == "You'r welcome" or "UW" or "ur welcome" or "Ur Welcome" or "Uw" then
+       
   end)
 end)
 
